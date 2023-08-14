@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX99 Mark II</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hero{
+            background-color: #FFFFFF;
+        }
+        .hero__container{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .hero__link{
+            color: #000000;
+            opacity: 0.5;
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 500;
+            margin-bottom: 56px;
+        }
+        .models__img__wrapper{
+            margin-right: 124.5px;
+        }
+        .headphone__value{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24.59px;
+            letter-spacing: 1.29px;
+            color: #000000;
+            margin-bottom: 47px;
+        }
+        .models__item__buttons{
+            display: flex;
+            align-items: center;
+            margin-top: 47px;
+        }
+        .buttons__left{
+            padding: 15px 15.5px;
+            display: flex;
+            background-color: #F1F1F1;
+            margin-right: 16px;
+        }
+        .buttons__left__minus{
+            margin-right: 20px;
+            opacity: 0.5;
+        }
+        .buttons__left__number{
+            margin-right: 21px;
+        }
+        .buttons__left__plus{
+            opacity: 0.5;
+        }
+        .information__container {
+            padding-top: 100px;
+            padding-bottom: 160px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .info__left {   
+            width: 635px;
+        }
+        .info__title {
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+        .info__description {
+            opacity: 0.5;
+            color: #000000;
+        }
+        .info__item {
+            margin-bottom: 8px;
+            display: flex;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .info__item span{
+            color: #D87D4A;
+            font-weight: 700;
+            margin-right: 24px;
+            opacity: 1;
+        }
+        .info__item p{
+            color: #000000;
+            opacity: 0.5;
+        }
+        .picture__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .pictures__left img{
+            border-radius: 8px;
+            &:first-child{
+                margin-bottom: 32px;
+            }
+        }
+        .pictures__right img{
+            height: 592px;
+            border-radius: 8px;
+        }
+        .interested__container {
+            margin-bottom: 160px;
+            margin-top: 160px;
+        }
+        .interested__title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3.2rem;
+            margin-bottom: 64px;
+        }
+        .interested__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .interested__item {
+            text-align: center;
+            width: 350px;
+        }
+        .interested__item__wrapper {
+            background-color: #F1F1F1;
+            width: 350px;
+            height: 318px;
+            margin-bottom: 40px;
+        }
+        .wrapper__1{
+            padding: 62px 100.93px;
+        }
+        .wrapper__2{
+            padding: 59px 79.85px 60px 79.34px;
+        }
+        .wrapper__3{
+            padding: 73px 103.82px;
+        }
+        .interested__item__title {
+            margin-bottom: 32px;
+            font-size: 2.4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="header__container container">
+            <img class="site__bar" src="../images/bar.svg" alt="">
+            <!-- LOGO -->
+            <a class="site__logo" href="../index.html">
+                <img src="../images/logo-img.svg" alt="Site logo image">
+            </a>
+            <!-- SITENAV -->
+            <nav class="sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="../index.html">HOME</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="./headphones.html">HEADPHONES</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="./speakers.html">SPEAKERS</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="./earphones.html">EARPHONES</a>
+                    </li>   
+                </ul>
+            </nav>
+            <!-- SHOP -->
+            <a class="header__link" href="#">
+                <img src="../images/shop-icon.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    
+    <!-- MAIN START-->
+    <main class="main">
+        <!-- HERO START -->
+        <section class="hero">
+            <div class="hero__container container">
+                <a class="hero__link" href="./headphones.html">
+                    <span class="hero__back">
+                        Go Back
+                    </span>
+                </a>
+                <div class="models__item">
+                    <div class="models__img__wrapper">
+                        <img src="../images/black-headphone-img.png" alt="">
+                    </div>
+                    <div class="models__item__content">
+                        <span class="models__item__top">
+                            NEW PRODUCT
+                        </span>
+                        <h2 class="models__item__title">
+                            XX99 Mark II
+                            Headphones
+                        </h2>
+                        <p class="models__item__description">
+                            The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.
+                        </p>
+                        <span class="headphone__value">
+                            $ 2,999
+                        </span>
+                        <div class="models__item__buttons">
+                            <div class="buttons__left">
+                                <span class="buttons__left__minus">
+                                    -
+                                </span>
+                                <p class="buttons__left__number">
+                                    1
+                                </p>
+                                <span class="buttons__left__plus">
+                                    +
+                                </span>
+                            </div>
+                            <a class="buttons__right brown__btn btn" href="#">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HERO END -->
+        <!-- INFORMATION START -->
+        <section class="information">
+            <div class="information__container container">
+                <div class="info__left">
+                    <h3 class="info__title">
+                        FEATURES
+                    </h3>
+                    <p class="info__description">
+                        Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.
+                        <br>
+                        <br>
+                        The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.
+                    </p>
+                </div>
+                <div class="info__right">
+                    <h3 class="info__title">
+                        in the box
+                    </h3>
+                    <ul class="info__list">
+                        <li class="info__item">
+                            <span>1x</span>
+                            <p>Headphone Unit</p>
+                        </li>
+                        <li class="info__item">
+                            <span>2x</span>
+                            <p>Replacement Earcups</p>
+                        </li>
+                        <li class="info__item">
+                            <span>1x</span>
+                            <p>User Manual</p>
+                        </li>
+                        <li class="info__item">
+                            <span>1x</span>
+                            <p>3.5mm 5m Audio Cable</p>
+                        </li>
+                        <li class="info__item">
+                            <span>1x</span>
+                            <p>Travel Bag</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- INFORMATION END -->
+        <!-- HEADPHONES PICTURE START -->
+        <section class="picture">
+            <div class="picture__container container">
+                <div class="pictures__left">
+                    <img src="../images/hero-img-cut.png" alt="">
+                    <img src="../images/things-img.png" alt="">
+                </div>
+                <div class="pictures__right">
+                    <img src="../images/black-headphone-cut.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- HEADPHONES PICTURE END -->
+        <!-- INTEREST START -->
+        <section class="interested">
+            <div class="interested__container container">
+                <h2 class="interested__title">
+                    you may also like
+                </h2>
+                <ul class="interested__list">
+                    <li class="interested__item">
+                        <div class="interested__item__wrapper wrapper__1">
+                            <img src="../images/headphone-img.png" alt="">
+                        </div>
+                        <h3 class="interested__item__title">
+                            XX99 MARK I
+                        </h3>
+                        <a class="interested__btn brown__btn btn" href="./headphone-details-2.html">See Product</a>
+                    </li>
+                    <li class="interested__item">
+                        <div class="interested__item__wrapper wrapper__2">
+                            <img src="../images/white-headphone-small.png" alt="">
+                        </div>
+                        <h3 class="interested__item__title">
+                            XX59
+                        </h3>
+                        <a class="interested__btn brown__btn btn" href="./headphones-details-3.html">See Product</a>
+                    </li>
+                    <li class="interested__item">
+                        <div class="interested__item__wrapper wrapper__3">
+                            <img src="../images/speaker-img.png" alt="">
+                        </div>
+                        <h3 class="interested__item__title">
+                            ZX9 SPEAKER
+                        </h3>
+                        <a class="interested__btn brown__btn btn" href="./speakers-details-1.html">See Product</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- INTEREST END -->
+        <!-- SHOP START -->
+        <section class="shop">
+            <div class="shop__container container">
+                <ul class="shop__list">
+                    <li class="shop__item">
+                        <img class="shop__headphones__img" src="../images/headphone-img.png" alt="Headphone image">
+                        <span class="shop__headphones__title">
+                            HEADPHONES
+                        </span>
+                        <a class="shop__btn btn shop__headphones__btn" href="#">
+                            <span>
+                                shop
+                            </span>
+                            <img src="../images/right-arrow.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="shop__item">
+                        <img class="shop__item__speaker" src="../images/speaker-img.png" alt="Headphone image">
+                        <span class="shop__headphones__title">
+                            SPEAKERS
+                        </span>
+                        <a class="shop__btn btn shop__headphones__btn" href="#">
+                            <span>
+                                shop
+                            </span>
+                            <img src="../images/right-arrow.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="shop__item">
+                        <img class="shop__item__earphone" src="../images/earphone-img.png" alt="Headphone image">
+                        <span class="shop__headphones__title">
+                            EARPHONES
+                        </span>
+                        <a class="shop__btn btn shop__headphones__btn" href="#">
+                            <span>
+                                shop
+                            </span>
+                            <img src="../images/right-arrow.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <!-- SHOP END -->
+        <!-- BOTTOM START -->
+        <section class="bottom">
+            <div class="bottom__container container">
+                <div class="bottom__content">
+                    <h3 class="border__bottom__title">
+                        Bringing you the <span>best</span> audio gear
+                    </h3>
+                    <p class="border__bottom__description">
+                        Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.
+                    </p>
+                </div>
+                <img class="bottom__img" src="../images/hero-img.png" alt="Hero image" width="540" height="588">
+            </div>
+        </section>
+        <!-- BOTTOM END -->
+    </main>
+    <!-- MAIN END-->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <hr class="footer__line">
+            <div class="footer__links__wrapper">
+                <a class="footer__logo" href="../index.html">
+                    <img src="../images/logo-img.svg" alt="">
+                </a>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="../index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="./headphones.html">
+                            HEADPHONES
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="./speakers.html">
+                            SPEAKERS
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="./earphones.html">
+                            EARPHONES
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__text__wrapper">
+                <div class="footer__text">
+                    <p class="footer__description">
+                        Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.
+                    </p>
+                    <p class="footer__bottom">
+                        Copyright 2021. All Rights Reserved
+                    </p>
+                </div>
+                <ul class="footer__links__list">
+                    <li class="footer__links__item">
+                        <a class="facebook" href="#">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a class="twitter" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a class="instagram" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+</html>
